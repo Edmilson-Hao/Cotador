@@ -1,0 +1,48 @@
+body{
+    background-color: #d31313;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#corporcotador{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: auto;
+    border-radius: 1em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-right: 1em;
+}
+
+#cotarbtn{
+    float: right;
+}
+
+#resultado{
+    background-color: #d31313;
+    width: 85%;
+    height: 85vw;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 3.5em;
+    left: 1.2em;
+    border: 2px solid white;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+@media only screen and (min-width: 1024px) {
+    #resultado{
+        background-color: black;
+        width: 80vh;
+        height: 80%;
+        margin: auto;
+        position: absolute;
+        z-index: 1;
+        top: 3em;
+        left: 30vw;
+    }   
+}

@@ -13,11 +13,11 @@
     <meta name="mobile-web-app-title" content="Portifólio PWA">
     <link rel="touch-icon" href="img\logos\thapymar.png" type=image/x-icon>
     <link rel="shortcut icon" href="img\logos\thapymar.png" type="image/x-icon"/>
-
+	<script src='index.js'></script>
+	<script src='funcoes.js'></script>
+	<link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     <!--
-    <link rel="manifest" href="manifest.json" />
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    	<link rel="manifest" href="manifest.json" />
     -->
 </head>
 
@@ -33,7 +33,7 @@
 			<p>
 				Plano:
 				
-				<select name="selecionarplanos">
+				<select name="selecionarplanos" id="selecionarplanos">
 					<option value="HapvidaAmbulatorial">Hapvida Ambulatorial</option>
 					<option value="HapvidaAmbulatoriaComCoparticipação">Hapvida Ambulatoria Com Coparticipação</option>
 					<option value="HapvidaEnfermaria">Hapvida Enfermaria</option>
@@ -50,7 +50,7 @@
 			</h2>
 			
 			<p>
-				0-18:
+				0 - 18:
 				<input id="018" type="number" placeholder="0">
 			</p>
 			
@@ -95,12 +95,27 @@
 			</p>
 			
 			<p>
-				59+:
+				59 + :
 				<input id="59+" type="number" placeholder="0">
 			</p>
 		</div>
+
+		<input type="button" id="cotarbtn" value="Cotar" onclick="cotar();">
 	</div>
 	
+	<div style="display: none;" id="resultado">
+		<img alt="logoplano" id="logoplano">
+
+		<h1 id="tituloresultado"></h1>
+
+		<div id="subresultado">
+			<p id="resultado018"/>
+			
+			<p id="resultado1923"/>
+		</div>
+
+
+	</div>
 	
 </body>
 
