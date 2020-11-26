@@ -20,6 +20,11 @@ body{
     float: right;
 }
 
+#voltarbtn{
+    position: absolute;
+    margin-top: 50vh;
+}
+
 #resultado{
     background-color: #d31313;
     width: 85%;
