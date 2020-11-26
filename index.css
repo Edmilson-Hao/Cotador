@@ -20,6 +20,11 @@ body{
     float: right;
 }
 
+#voltarbtn{
+    position: absolute;
+    margin-top: 50vh;
+}
+
 #resultado{
     background-color: #d31313;
     width: 85%;
@@ -36,7 +41,7 @@ body{
 
 @media only screen and (min-width: 1024px) {
     #resultado{
-        background-color: black;
+        background-color: #d31313;
         width: 80vh;
         height: 80%;
         margin: auto;
