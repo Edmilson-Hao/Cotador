@@ -14,7 +14,7 @@
     <link rel="touch-icon" href="img\logos\thapymar.png" type=image/x-icon>
     <link rel="shortcut icon" href="img\logos\thapymar.png" type="image/x-icon"/>
 	<script src='index.js'></script>
-	<script src='funcoes.js'></script>
+	<script src='functions.js'></script>
 	<link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     <!--
     	<link rel="manifest" href="manifest.json" />
@@ -33,7 +33,7 @@
 			<p>
 				Plano:
 				
-				<select name="selecionarplanos" id="selecionarplanos">
+				<select name="selecionarplanos" id="selecionarplanos">  
 					<option value="HapvidaAmbulatorial">Hapvida Ambulatorial</option>
 					<option value="HapvidaAmbulatoriaComCoparticipação">Hapvida Ambulatoria Com Coparticipação</option>
 					<option value="HapvidaEnfermaria">Hapvida Enfermaria</option>
@@ -71,7 +71,7 @@
 			
 			<p>
 				34-38:
-				<input id="2428" type="number" placeholder="0">
+				<input id="3438" type="number" placeholder="0">
 			</p>
 			
 			<p>
@@ -101,6 +101,13 @@
 		</div>
 
 		<input type="button" id="cotarbtn" value="Cotar" onclick="cotar();">
+
+		<!--
+		<p id="textoMaisDeUmaPessoa">
+			Mais de uma pessoa?
+			<input type="checkbox" id="maisDeUmaPessoa">
+		</p>
+		-->
 	</div>
 	
 	<div style="display: none;" id="resultado">
@@ -109,12 +116,36 @@
 		<h1 id="tituloresultado"></h1>
 
 		<div id="subresultado">
-			<p id="resultado018"/>
+			<p id="resultado018"></p>
 			
-			<p id="resultado1923"/>
+			<p id="resultado1923"></p>
+
+			<p id="resultado2428"></p>
+
+			<p id="resultado2933"></p>
+
+			<p id="resultado3438"></p>
+
+			<p id="resultado3943"></p>
+
+			<p id="resultado4448"></p>
+
+			<p id="resultado4953"></p>
+
+			<p id="resultado5458"></p>
+			
+			<p id="resultado59+"></p>
+
+			<p id="resultadoQuantidadeDePessoas"></p>
+
+			<p id="resultadoValorFinal"></p>
 		</div>
 
 
+
+		<a ref="index.html">
+            <input type="button" id="voltarbtn" value="voltar" onclick="hideresultadodiv();">
+		</a>
 	</div>
 	
 </body>
