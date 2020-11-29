@@ -75,12 +75,25 @@ header{
     text-align: left;
 }
 
+.textoSpanResultado{
+    float: left;
+}
+
+.valorSpanResultado{
+    float: right;
+}
+
 #subDivResultado{
     text-decoration: underline;
 }
 
 .tabelaDeResultados{
     border: 1px solid white;
+}
+
+th{
+    width: 30%;
+    text-align: left;
 }
 
 @media only screen and (min-width: 1024px) {
