@@ -4,8 +4,21 @@ body{
     text-align: center;
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
+header{
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 5em;
+}
+
+#titulo{
+    position: flex;
+    text-align: center;
+    vertical-align: middle;
+}
 #corporcotador{
     background-color: rgba(0, 0, 0, 0.2);
     width: 80%;
@@ -22,7 +35,39 @@ body{
 
 #voltarbtn{
     position: absolute;
-    margin-top: 50vh;
+    background: white;
+    color: black;
+    border: 4px solid grey;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 1vw 38vw;
+    text-decoration: none;
+    font-size: 2em;
+    text-align: center;
+    top: 0.5em;
+    left: 0.5em;
+}
+
+#voltarbtn:hover{
+    background: black;
+    color: white;
+    border: 4px solid grey;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 4vw 40vw;
+    font-size: 2em;
+    text-align: center;
+}
+
+#voltarbtn:active{
+    background: white;
+    color: grey;
+    border: 4px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 4vw 40vw;
+    font-size: 2em;
+    text-align: center;
 }
 
 #resultado{
@@ -32,11 +77,14 @@ body{
     margin: auto;
     position: absolute;
     z-index: 1;
-    top: 3.5em;
+    top: 5em;
     left: 1.2em;
     border: 2px solid white;
     border-radius: 1em;
     padding: 1em;
+}
+#spanResultado{
+    text-align: left;
 }
 
 @media only screen and (min-width: 1024px) {
