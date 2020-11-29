@@ -1,18 +1,12 @@
 //função para cotar o plano
-function cotar(){
+cotar = () => {
+    document.getElementById('corpoCotador').style.display = 'none';        
     document.getElementById('resultado').style.display = 'block';
-    document.getElementById('voltarbtn').style.display = 'block';
-    document.getElementById('corporcotador').style.display = 'none';
-    document.getElementById('header').style.display = 'none';
-    //Verificando plano selecionado
-    if(document.getElementById('selecionarplanos').value === 'HapvidaAmbulatorial'){
-        cotarhapvidaambulatorial();
-    }
-    
-        
+
+    if(document.getElementById('selecionarplanos').value === 'HapvidaAmbulatorial') cotarHapvidaAmbulatorial();
 }
 
-hideresultadodiv = () => {
+voltar = () => {
+    document.getElementById('corpoCotador').style.display = 'block';        
     document.getElementById('resultado').style.display = 'none';
-    document.getElementById('voltarbtn').style.display = 'none';
 }

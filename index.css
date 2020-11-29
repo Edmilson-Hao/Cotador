@@ -18,56 +18,50 @@ header{
     position: flex;
     text-align: center;
     vertical-align: middle;
+    text-size: 1em;
 }
-#corporcotador{
+
+#thapymarLogo{
+    width: 5em;
+    height: 5em;
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 0;
+}
+
+#corpoCotador{
     position: relative;
     top: 6em;
     background-color: rgba(0, 0, 0, 0.2);
     margin: auto;
     width: 80%;
-    padding: 2em 1em;
+    padding: 0.5em 1em 2.5em 1em;
     border-radius: 10px;
 }
 
+.inputIdadeTexto{
+    text-align: left;
+}
+.inputIdade{
+    width: 4em;
+    float: right;
+    text-align: right;
+}
+
+.inputSeparation{
+    margin: -5px;
+    padding: 0;
+}
+
 #cotarbtn{
+    margin-top: 10px;
     float: right;
 }
 
 #voltarbtn{
-    position: absolute;
-    background: white;
-    color: black;
-    border: 4px solid grey;
-    border-radius: 15px;
-    cursor: pointer;
-    padding: 1vw 38vw;
-    text-decoration: none;
-    font-size: 2em;
-    text-align: center;
-    top: 0.5em;
-    left: 0.5em;
-}
-
-#voltarbtn:hover{
-    background: black;
-    color: white;
-    border: 4px solid grey;
-    border-radius: 15px;
-    cursor: pointer;
-    padding: 4vw 40vw;
-    font-size: 2em;
-    text-align: center;
-}
-
-#voltarbtn:active{
-    background: white;
-    color: grey;
-    border: 4px solid black;
-    border-radius: 15px;
-    cursor: pointer;
-    padding: 4vw 40vw;
-    font-size: 2em;
-    text-align: center;
+    margin-top: 10px;
+    float: right;
 }
 
 #resultado{
@@ -76,26 +70,17 @@ header{
     background-color: rgba(0, 0, 0, 0.2);
     margin: auto;
     width: 80%;
-    padding: 2em 1em;
+    padding: 0.5em 1em 2.5em 1em;
     border-radius: 10px;
-    z-index: 1;
-}
-/*#resultado{
-    background-color: #d31313;
-    width: 85%;
-    height: 85vw;
-    margin: auto;
-    position: absolute;
-    z-index: 1;
-    top: 5em;
-    left: 1.2em;
-    border: 2px solid white;
-    border-radius: 1em;
-    padding: 1em;
-}*/
-
-#spanResultado{
     text-align: left;
+}
+
+#subDivResultado{
+    text-decoration: underline;
+}
+
+.tabelaDeResultados{
+    border: 1px solid white;
 }
 
 @media only screen and (min-width: 1024px) {
