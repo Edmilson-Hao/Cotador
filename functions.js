@@ -3,45 +3,12 @@ cotarHapvidaAmbulatorial = () => {
     var totalValor = 0;
     document.getElementById('subDivResultado').innerHTML = '';
 
-    //Tratamento da faixa etária 0 - 18
-    if(document.getElementById('018').value > 0){
-        let totalValorParcial = document.getElementById('018').value * 103.52;
-        let totalPessoasParcial = document.getElementById('018').value;
+    alert(dados[0].faixa);
+    alert(parseFloat(dados[0].valor).toFixed(2)*2);
 
-        totalPessoas = totalPessoas + totalPessoasParcial;
-        totalValor = totalValor + totalValorParcial;
 
-        document.getElementById('subDivResultado').innerHTML += `
-            <table>
-                <tr>
-                    <th>0 - 18</th>
-                    <th>\t` + totalPessoasParcial + `</th>
-                    <th>R$103.52</th>
-                    <th>` + totalValorParcial + `</th>
-                </tr>
-            </table>
-        `;
-    }
 
-    //Tratamento da faixa etária 19 - 23
-    if(document.getElementById('1923').value > 0){
-        let totalValorParcial = document.getElementById('1923').value * 136.20;
-        let totalPessoasParcial = document.getElementById('1923').value;
-
-        totalPessoas = totalPessoas + totalPessoasParcial;
-        totalValor = totalValor + totalValorParcial;
-
-        document.getElementById('subDivResultado').innerHTML += `
-            <table>
-                <tr>
-                    <th>19-23</th>
-                    <th>\t` + totalPessoasParcial + `</th>
-                    <th>R$136.20</th>
-                    <th>` + totalValorParcial.toFixed(2) + `</th>
-                </tr>
-            </table>
-        `;
-    }
+    
 
     
 
@@ -82,3 +49,47 @@ cotarHapvidaAmbulatorial = () => {
         `;
     }
 }
+
+
+
+/*
+//Tratamento da faixa etária 0 - 18
+    if(document.getElementById('018').value > 0){
+        let totalValorParcial = document.getElementById('018').value * 103.52;
+        let totalPessoasParcial = document.getElementById('018').value;
+
+        totalPessoas = totalPessoas + totalPessoasParcial;
+        totalValor = totalValor + totalValorParcial;
+
+        document.getElementById('subDivResultado').innerHTML += `
+            <table>
+                <tr>
+                    <th>0 - 18</th>
+                    <th>\t` + totalPessoasParcial + `</th>
+                    <th>R$103.52</th>
+                    <th>` + totalValorParcial + `</th>
+                </tr>
+            </table>
+        `;
+    }
+
+    //Tratamento da faixa etária 19 - 23
+    if(document.getElementById('1923').value > 0){
+        let totalValorParcial = document.getElementById('1923').value * 136.20;
+        let totalPessoasParcial = document.getElementById('1923').value;
+
+        totalPessoas = totalPessoas + totalPessoasParcial;
+        totalValor = totalValor + totalValorParcial;
+
+        document.getElementById('subDivResultado').innerHTML += `
+            <table>
+                <tr>
+                    <th>19-23</th>
+                    <th>\t` + totalPessoasParcial + `</th>
+                    <th>R$136.20</th>
+                    <th>` + totalValorParcial.toFixed(2) + `</th>
+                </tr>
+            </table>
+        `;
+    }
+*/
