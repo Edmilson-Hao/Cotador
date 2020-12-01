@@ -1,27 +1,75 @@
-cotarHapvidaAmbulatorial = () => {
     var totalPessoas = 0;
     var totalValor = 0;
+    var valorParcial;
+    var numeroParcialPessoas;
+cotarHapvidaAmbulatorial = () => {
     document.getElementById('subDivResultado').innerHTML = '';
 
-    alert(dados[0].faixa);
-    alert(parseFloat(dados[0].valor).toFixed(2)*2);
+    //0 a 18 anos
+    if(document.getElementById('018').value > 0){
+        valorParcial = 0;
+        numeroParcialPessoas = 0;
+
+        valorParcial = parseFloat(dados[0].valor * (document.getElementById('018').value)).toFixed(2);
+        numeroParcialPessoas = document.getElementById('018').value;
+
+        totalPessoas = parseInt(numeroParcialPessoas);
+        totalValor = parseFloat(valorParcial).toFixed(2);
+
+        document.getElementById('subDivResultado').innerHTML += `
+            <table class='resultTable'>    
+                <tr>
+                    <th>0 - 18</th>
+                    <th>` + numeroParcialPessoas + `</th>
+                    <th>R$: ` + dados[0].valor + `</th>
+                    <th>R$: ` + valorParcial+ `</th>
+                </tr>
+            </table>
+            <br>
+        `;
+    }
 
 
+    //19 a 23 anos
+    if(document.getElementById('1923').value > 0){
+        valorParcial = 0;
+        numeroParcialPessoas = 0;
+        
+        valorParcial = parseFloat(dados[1].valor * (document.getElementById('1923').value)).toFixed(2);
+        numeroParcialPessoas = document.getElementById('1923').value;
+
+        totalPessoas = totalPessoas + parseInt(numeroParcialPessoas);
+        
+        totalvalor = parseFloat(totalValor) + parseFloat(valorParcial);
+        
+        
+        
+        document.getElementById('subDivResultado').innerHTML += `
+            <table class='resultTable'>    
+                <tr>
+                    <th>19 - 23</th>
+                    <th>` + numeroParcialPessoas + `</th>
+                    <th>R$: ` + dados[1].valor + `</th>
+                    <th>R$: ` + valorParcial + `</th>
+                </tr>
+            </table>
+            <br>
+        `;
+    }
 
     
 
-    
 
-    //Imprimindo parte final do cotador
-    if(totalPessoas > 0 && totalValor > 0){
 
+
+    if(totalPessoas > 0 ) {
         document.getElementById('subDivResultado').insertAdjacentHTML("afterbegin", `
-            <table>    
+            <table class='tableHeader'>    
                 <tr>
                     <th>Faixa Etária</th>
-                    <th>Quantidade</th>
-                    <th>Unitário</th>
-                    <th>Valor</th>
+                    <th class='thHeader'>Quantidade</th>
+                    <th class='thHeader'>Unitário</th>
+                    <th class='thHeader'>Valor</th>
                 </tr>
             </table>
             <br>
@@ -40,7 +88,7 @@ cotarHapvidaAmbulatorial = () => {
 
             <p class='paragraphSpanResultado'>
                 <span class='textoSpanResultado'>Valor Total:</span>
-                <span class='valorSpanResultado'>R$:` + parseFloat(totalValor).toFixed(2) + `</span>
+                <span class='valorSpanResultado'>R$:` + parseFloat(totalvalor).toFixed(2) + `</span>
             </p>
 
             <br>

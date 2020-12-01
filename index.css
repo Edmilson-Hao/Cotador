@@ -19,6 +19,7 @@ header{
     text-align: center;
     vertical-align: middle;
     text-size: 1em;
+    text-decoration: underline rgba(0, 0, 0, 0.1);
 }
 
 #thapymarLogo{
@@ -83,17 +84,30 @@ header{
     float: right;
 }
 
-#subDivResultado{
-    text-decoration: underline;
-}
-
 .tabelaDeResultados{
     border: 1px solid white;
 }
 
-th{
+table{
+    width: 100%;
+    text-decoration: none;
+    padding: 0;
+}
+
+.tableHeader{
+    border: 1px solid white;
+    padding: 0;
+}
+
+.thHeader{
+    border-left: 1px solid white;
+    padding: 0.
+}
+
+.resultTable th{
     width: 30%;
     text-align: left;
+    border-bottom: 1px solid white;
 }
 
 @media only screen and (min-width: 1024px) {
