@@ -6,6 +6,9 @@ cotar = () => {
 
     switch(planoSelecionado){
         case 'hapvidaAmbulatorial':
+            //Dando Título e logo ao topo do resultado
+            document.getElementById('logoplano').src = './img/logos/hapvida.png';
+            document.getElementById('tituloDoPlano').innerHTML = "Hapvida Ambulatorial";
             cotarHapvidaAmbulatorial();
         break;
         case 'Mangoes':
