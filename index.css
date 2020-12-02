@@ -71,7 +71,7 @@ header{
     background-color: rgba(0, 0, 0, 0.2);
     margin: auto;
     width: 80%;
-    padding: 0.5em 1em 2.5em 1em;
+    padding: .5em .5em 2.5em .5em;
     border-radius: 10px;
     text-align: left;
 }
@@ -84,37 +84,11 @@ header{
     float: right;
 }
 
-.tabelaDeResultados{
-    border: 1px solid white;
-}
-
-table{
-    width: 100%;
-    text-decoration: none;
-    padding: 0;
-}
-
-.tableHeader{
-    border: 1px solid white;
-    padding: 0;
-}
-
-.thHeader{
-    border-left: 1px solid white;
-    padding: 0.
-}
-
-.resultTable th{
-    width: 30%;
-    text-align: left;
-    border-bottom: 1px solid white;
-}
-
 @media only screen and (min-width: 1024px) {
     #resultado{
         background-color: black;
         width: 80vh;
-        height: 80%;
+        min-height: 80%;
         margin: auto;
         position: absolute;
         z-index: 1;
