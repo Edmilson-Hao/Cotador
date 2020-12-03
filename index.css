@@ -99,7 +99,6 @@ header{
 
 @media only screen and (min-width: 1024px) {
     #resultado{
-        background-color: black;
         width: 80vh;
         min-height: 80%;
         margin: auto;
