@@ -136,7 +136,7 @@ cotarHapvidaAmbulatorial = () => {
     //44 a 48 anos
     if(document.getElementById('4448').value > 0){
         let valorDestaFaixa = 249.89;
-        let quantidadeDePessoasDestaFaixa = Number(document.getElementById('3943').value);
+        let quantidadeDePessoasDestaFaixa = Number(document.getElementById('4448').value);
         
         totalValor += valorDestaFaixa * quantidadeDePessoasDestaFaixa;
         totalPessoas += quantidadeDePessoasDestaFaixa;
