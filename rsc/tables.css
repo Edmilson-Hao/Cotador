@@ -1,0 +1,41 @@
+table{
+    width: 100%;
+    text-decoration: none;
+    text-align: left;
+    padding: 0;
+}
+
+.resultTable th{
+    text-align: left;
+    border-bottom: 1px solid white;
+}
+
+table tr th:first-child{
+    width: 15%;
+    padding: 0;
+    margin: 0;
+}
+
+table tr th:nth-child(2){
+    width: 30%;
+}
+
+table tr th:nth-child(3){
+    width: 27%;
+}
+
+table tr th:nth-child(4){
+    width: 28%;
+}
+
+.headerTable{
+    border: 1px solid white;
+}
+
+.headerTable tr th:not(:first-child){
+    border-left: 1px solid white;
+}
+
+.resultTable tr th:not(:first-child){
+    padding-left: 10px;
+}

@@ -4,19 +4,64 @@ body{
     text-align: center;
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-#corporcotador{
+header{
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.2);
-    width: 80%;
+    width: 100%;
+    height: 5em;
+}
+
+#titulo{
+    position: flex;
+    text-align: center;
+    vertical-align: middle;
+    text-size: 1em;
+    text-decoration: underline rgba(0, 0, 0, 0.1);
+}
+
+#thapymarLogo{
+    width: 5em;
+    height: 5em;
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 0;
+}
+
+#corpoCotador{
+    position: relative;
+    top: 6em;
+    background-color: rgba(0, 0, 0, 0.2);
     margin: auto;
-    border-radius: 1em;
-    padding-top: 1em;
-    padding-bottom: 2em;
-    padding-right: 1em;
+    width: 80%;
+    padding: 0.5em 1em 2.5em 1em;
+    border-radius: 10px;
+}
+
+.inputIdadeTexto{
+    text-align: left;
+}
+.inputIdade{
+    width: 4em;
+    float: right;
+    text-align: right;
+}
+
+.inputSeparation{
+    margin: -5px;
+    padding: 0;
 }
 
 #cotarbtn{
+    margin-top: 10px;
+    float: right;
+}
+
+#voltarbtn{
+    margin-top: 10px;
     float: right;
 }
 
@@ -29,24 +74,45 @@ body{
 }
 
 #resultado{
-    background-color: #d31313;
-    width: 85%;
-    height: 85vw;
+    position: relative;
+    top: 6em;
+    background-color: rgba(0, 0, 0, 0.2);
     margin: auto;
+    width: 80%;
+    padding: .5em .5em 2.5em .5em;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.textoSpanResultado{
+    float: left;
+}
+
+.valorSpanResultado{
+    float: right;
+}
+
+#tituloDoPlano{
+    display: inline-block;
     position: absolute;
-    z-index: 1;
-    top: 3.5em;
-    left: 1.2em;
-    border: 2px solid white;
-    border-radius: 1em;
-    padding: 1em;
+    padding: 0;
+    margin: 0;
+    margin: .5em 0 0 1em;
+    border-bottom: 1px solid white;
+}
+#logoplano{
+    width: 2em;
+    height: 2em;
 }
 
 @media only screen and (min-width: 1024px) {
     #resultado{
+<<<<<<< HEAD
         background-color: #d31313;
+=======
+>>>>>>> 8f7fefa743ae69609781bb4cf33d77ab022ae0d4
         width: 80vh;
-        height: 80%;
+        min-height: 80%;
         margin: auto;
         position: absolute;
         z-index: 1;
